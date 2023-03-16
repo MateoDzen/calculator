@@ -65,6 +65,8 @@ public class Main {
                     String result2 = String.valueOf(intFirstNum * intSecondNum);
                     return result2;
                 case "/":
+                    if (intSecondNum == 0){
+                        throw new IOException("На ноль делить нельзя");
                     String result3 = String.valueOf(intFirstNum / intSecondNum);
                     return result3;
             }
